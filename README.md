@@ -25,8 +25,6 @@ npm i
 **Run:**
 ng serve
 
-**Test:**
-ng test
 
 **Production:**
 ng build --prod

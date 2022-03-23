@@ -22,11 +22,11 @@ Features the following The New York Times API's: Book Best Sellers API and Book 
 
 
 ## Start
+cd bookcompany
 npm i
 
 **Run:**
-ng serve
-
+npm start
 
 **Production:**
 ng build --prod

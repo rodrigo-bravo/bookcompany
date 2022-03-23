@@ -1,0 +1,35 @@
+<div class="modal-content" >
+  <div class="modal-header">
+    <div>
+    <img id="projImg" src="{{ project.bookCoverUrl }}" class="card-img justify-content-center"  height="100" width="165" alt="Book Image" onerror= "this.src='https://cdn-icons-png.flaticon.com/512/1047/1047711.png'">
+  </div>
+    <button type="button" class= "close pull-right btn-close" (click)="modalRef.hide()">
+      <span class="icon-cross"></span>
+      <span class="visually-hidden">Close</span>
+    </button>
+    <h4 class="modal-title w-100 p-3" id="modalLabel">{{ heading }}</h4>
+  </div>
+  <div class="modal-body">
+    <form #projectForm="ngForm">
+      <div class="md-form" id="titleBox">
+        <label for="title">Book Title</label>
+        <input type="text" class="form-control" name="title" [(ngModel)]= "project.title" mdbInput mdbValidate [validateSuccess]= "false" #title="ngModel" required>
+        <div id="titleError" *ngIf= "title && title.invalid && (title.dirty || title.touched)">Title is required.</div>
+      </div>
+      <div class="md-form" id="descBox">
+        <label for="description">Book Description</label>
+        <textarea type="text" id="description" pattern="\s*(\S\s*){50,}" class="md-textarea form-control" name="description" [(ngModel)]= "project.description" mdbInput mdbValidate [validateSuccess]="false" minlength="50" #description="ngModel" required></textarea>
+        <div id="titleError" *ngIf= "description && description.invalid && (description.dirty || description.touched)">Description must be at least 50 characters long.</div>
+      </div>
+      <div class="md-form" id="url-box">
+        <label for="photo">Photo URL</label>
+        <input type="text" id="photo" class="form-control" name="bookCoverUrl" [(ngModel)]= "project.bookCoverUrl" mdbInput>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="button"  (click)= "modalRef.hide()">Close</button>
+    <button type="button" class="button" id="saveBtn"  (click)= "onSave()">Save</button>
+  </div>
+</div>
+

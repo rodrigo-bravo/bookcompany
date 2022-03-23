@@ -1,0 +1,104 @@
+.video-wrapper {
+  object-fit: fill !important;
+}
+
+#welcomeNavbar {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+#vid {
+  width: 100%;
+  position: relative;
+}
+
+#vidHeader {
+  color: white;
+  font-size: 2.6vw;
+}
+
+.vidsection { 
+  height: auto;
+  background-color:rgb(33,37,41);
+}
+
+.overlay {
+  position:absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#vidText {
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 200;
+}
+
+section {
+  position: fixed !important;
+}
+
+section:not(.first) {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.8);
+}
+
+#stop {
+  background-color: white !important;
+}
+
+body {
+  height: 100% !important;
+}
+
+#startNowButton {
+  text-decoration: none;
+  width: 135px;
+  height: 45px;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  transition: 0.5s;
+  margin-right: 10px;
+  background-image: linear-gradient(315deg, #917249 0%, #bd8473 74%);
+}
+
+#mainContainer {
+  margin-top: -180px !important;
+}
+
+@media only screen and (max-width: 991px) {
+  #mainContainer {
+    margin-top: -10px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #mainContainer{
+    margin-top: -100px !important;
+    }
+}
+
+#imageBorder {
+  border-radius: 10px;
+}
+
+#divisionImage {
+  margin-top: -30px;
+}
+
+#startNowButton:hover {
+  color: #fdfdfd;
+  box-shadow: 0 0 5px #a09763,
+              0 0 25px #946455,
+              0 0 50px #b37b61,
+              0 0 100px #b4916f;
+}
+
+#mainImage {
+  box-shadow: 10px 5px 5px rgb(64, 118, 134);
+}
+

@@ -1,0 +1,196 @@
+
+#desc {
+  display: -webkit-box;
+  min-width: 110%;
+  min-height: 220px;
+  margin-left: 3.5%;
+  -webkit-line-clamp:9;
+  -webkit-box-orient: vertical;
+  overflow-y: auto;
+  scrollbar-width: none;
+  margin-bottom: 4vh;
+}
+
+::-webkit-scrollbar {
+  width: 7.2px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(177, 125, 125);
+  outline: 1px solid rgb(92, 61, 3);
+}
+
+#projImg{
+  margin-top: 2.5px;
+}
+
+#share-buttons{
+  background-color: rgba(111, 93, 128, 0.774) !important;
+  color: black !important;
+  --sb-icon-size: 15px;
+  --sb-font-size: 10px;
+  --sb-padding: 0px 0px;
+  width: 110% !important;
+  height: 30px
+}
+.sb-icon{
+  color: blue;
+  background-color: black;
+}
+
+.card{
+  background-color: rgb(255, 255, 255);
+}
+
+#cardTitle{
+  font-size: 25px;
+  margin-left: 3.5%;
+  max-height: 55px;
+  min-height: 55px;
+	line-height: 30px;
+	font-weight: normal;
+	color: white;
+	font-family: 'Hammersmith One', sans-serif;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+	color: rgb(182, 152, 135);
+  
+}
+
+.long{
+  font-size: 20px !important;
+}
+.slong{
+  font-size: 20px !important;
+
+}
+
+.xlong{
+  overflow-y: auto;
+  margin-bottom: 1vh;
+}
+
+@media only screen and (max-width: 767px) {
+  #desc{
+    min-width: 20ch;
+  }
+  #share-buttons{
+    width: 100% !important;
+  }
+}
+
+#footer{
+  position: bottom;
+  margin-left: 3.5%;
+}
+
+img{
+  border: 5px solid black !important;
+  border-radius: 12px;
+}
+
+#button2{
+  margin-bottom: 12px !important;
+}
+
+#button1, #button2{
+  min-width: 99%;
+  min-height: 38px;
+  margin-left: 1px;
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #442a37;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#button1{
+  margin-bottom: -8px !important;
+  margin-top: 8px;
+}
+
+#button1:hover, #button2:hover{
+  filter: brightness(1.2) !important;
+}
+
+$colors: (
+  del: #fa9e9f, 
+  edit: #81c5e4, 
+);
+
+@each $button, $color in $colors {
+    .#{$button} {
+      --color: #{$color};
+      --hover: #{adjust-hue($color, 10deg)};
+    }
+  }
+
+del{
+    transition: 0.25s;
+  
+  &:hover,
+  &:focus { 
+    border-color: var(--hover);
+    color: rgb(204, 121, 121);
+  }
+}
+
+button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+  }
+
+button {  
+  color: var(--color);
+  transition: 0.25s;
+  
+  &:hover,
+  &:focus { 
+    border-color: var(--hover);
+    color: rgb(184, 144, 144);
+  }
+}
+
+.card{
+  padding: 0 15px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  height: 10%;
+}
+
+.card-title{
+  font-size: 30px;
+}
+
+#redirectButton{
+  justify-content: center !important;
+}
+
+#main-container {
+  max-width: 68ch
+}

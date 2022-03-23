@@ -1,0 +1,27 @@
+<div class="card mb-4" id="main-container">
+  <div class="row no-gutters">
+    <div class="col-md-5" id="projImg1">
+      <div><img id="projImg" src="{{ project.bookCoverUrl }}" class="card-img justify-content-center"  height="432" width="248" alt="Not Found" onerror= "this.src='https://images.unsplash.com/photo-1592195241273-5c30d3935d8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fHdhbGxwYXBlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'"></div>
+      <div class="buttonClass">
+        <button class="edit" id="button1" (click)= "onEdit()">EDIT</button>
+        <button class="del" id="button2" (click)= "onDelete()">DELETE</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <p id="cardTitle" [ngClass]= "{'long': project.title?.length > 17, 'slong': project.title?.length > 33, 'xlong': project.title?.length > 50 }">{{project.title}}</p>
+        <p id= "desc" class="card-text">{{project.description}}</p>
+        <share-buttons theme="moon" id="share-buttons" theme="moon"
+        [include]="['copy',  'telegram',  'twitter']"
+        [showIcon]="true"
+        [showText]="true"
+        url="https://bookcompanyus.com/projects/{{project.title}}"
+        description="Share your BookCompany books!"
+        twitterAccount=""
+        class="pt-0"> 
+      </share-buttons>
+        <footer><p class="card-text" id="footer"><small class="text-muted">Last updated 3 mins ago</small></p></footer>
+      </div>
+    </div>
+  </div>
+</div>

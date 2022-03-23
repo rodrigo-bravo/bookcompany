@@ -1,0 +1,5 @@
+<div class="full-wrapper">
+  <div class = "profile-wrapper">
+    <app-profile-user [user]= "user$ | async" (logout)="logoutUser($event) " (profileUpdate)="updateProfile($event)"></app-profile-user>
+  </div>
+</div>

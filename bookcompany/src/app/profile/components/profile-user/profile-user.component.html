@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset=UTF-8>
+    <title>Profile Page</title>
+  </head>
+
+<div class="container">
+  <div class="main-body">
+        <nav id="link">
+          <ol class="breadcrumb" id="link">
+            <li class="breadcrumb-item"><a href="index.html"> Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page"> Profile</li>
+          </ol>
+        </nav>
+        <div class="row gutters-sm">
+          <div class="col-md-4 mb-3">
+            <div class="card" id="avatarCard">
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center text-center">
+                    <img *ngIf= "user.photoUrl" src= "{{ user.photoUrl }}" height="150" width="150" class="rounded-circle" onerror="this.src='https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg'" id="userImage">          
+                    <div class="mt-3" >
+                      <div class="user-avatar">
+                        <h4 *ngIf= "user.displayName" class= "usernameText" id="usernameText">{{ user.displayName }} 
+                          <span class="verifiedLogo"><img src="//i.ibb.co/x8fJVwX/check.png" height="13" width="13" alt="Verified Logo"> </span> 
+                      </h4>
+                    </div>
+                    <h4 *ngIf= "!user.displayName" class= "usernameText">Anonymous User</h4>
+                    <br>
+                    <p class="text-muted font-size-sm" id="cityText">North Beach, San Francisco, CA </p>
+                    <button class="signOutButton" id="signOutButton" (click)= "onLogout()"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                        <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/></svg>&nbsp;
+                      Sign Out
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mt-3">
+              <ul class="list-group list-group-flush">
+                <li class="websiteBox list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                  <h6 class=" mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16">
+                    <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z"/>
+                    <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+                  </svg> &nbsp;Website</h6>
+                  <span class="text-secondary" id="website-text">https://BookCompany.com/ {{ user.displayName }}</span>
+                </li>
+              </ul>
+              
+            </div>
+         <p></p>
+                <div class="card h-10 w-5">
+                  <div class="card-body" id="progressCard">
+                    <h6 class="d-flex align-items-center mb-3" class="progressLinks"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-kanban-fill" viewBox="0 0 16 16">
+                      <path d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/>
+                    </svg> &nbsp; Collection Status</h6>
+                    <small class="progressLinks">Books</small>
+                    <div class="progress mb-3">
+                      <div class="progress-bar" id="pb3" role="progressbar"></div>
+                    </div>
+                    <small class="progressLinks">Songs</small>
+                    <div class="progress mb-3">
+                      <div class="progress-bar" role="progressbar"></div>
+                    </div>
+                    <small class="progressLinks">Films</small>
+                    <div class="progress mb-3">
+                      <div class="progress-bar" id="pb1" role="progressbar"></div>
+                    </div>
+                    <small class="progressLinks">Albums</small>
+                    <div class="progress mb-3">
+                      <div class="progress-bar" role="progressbar"></div>
+                    </div>
+                    <small class="progressLinks">Charts</small>
+                    <div class="progress mb-3">
+                      <div class="progress-bar" id="pb2" role="progressbar"></div>
+                    </div>
+                  </div>
+                </div>    
+          </div>
+          <div class="col-md-8">
+            <div class="panel">
+              <form>
+                <textarea type="text"  name="profileMessage" id="textArea" placeholder="Update Your Profile Status..." rows="2" class="form-control input-lg p-text-area" #messageArea></textarea>
+                <footer class="panel-footer">
+                    <button type="button"  (click)= 'addMessage(messageArea.value)' id="postButton"  class="postButton pull-right">Post </button>
+                    <ul class="nav nav-pills">
+                        <li class="iconPost">
+                            <a href="#"><i class="fa fa-map-marker"></i></a>
+                        </li>
+                        <li class="iconPost">
+                            <a href="#"><i class="fa fa-camera"></i></a>
+                        </li>
+                        <li class="iconPost">
+                            <a href="#"><i class=" fa fa-film"></i></a>
+                        </li>
+                        <li class="iconPost">
+                            <a href="#"><i class="fa fa-microphone"></i></a>
+                        </li>
+                    </ul>
+                </footer>
+            </form>
+          </div>
+          <p id="divider-spacing"></p>
+            <div class="card mb-3">
+              <form [formGroup]= "updateProfileForm">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">User</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    <input formControlName= "displayName" class="formTitle"/>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Avatar Icon URL</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    <input formControlName= "photoUrl" class="formTitle"/>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Phone</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    (123) 456-7890
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Mobile</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    (123) 456-7890
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Address</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    North Beach, San Francisco, CA
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <a class="updateButton" (click)= "onProfileUpdate()">Update Profile</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+            </div>
+            <br id="spacing">
+                <ol class="breadcrumb bread-warning" id="breadcrumb-adjustment">
+                  <a id="calendar-header"><i class="fa fa-calendar-o"></i> Calendar</a>
+                </ol>
+            <div class="row text-center">
+              <div class="col-md-4">
+                <div class="btn-group">
+                    <div class="calendarButton"  (click)= "setView(CalendarView.Month)" [class.active]= "view === CalendarView.Month">
+                        Month
+                    </div>
+                    <div class="calendarButton"   (click)= "setView(CalendarView.Week)" [class.active]= "view === CalendarView.Week">
+                        Week
+                    </div>
+                    <div class="calendarButton"  (click)= "setView(CalendarView.Day)" [class.active]= "view === CalendarView.Day">
+                        Day
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-2 ">
+                  <div class="btn-group">
+                      <div class="calendarButton" mwlCalendarPreviousView [view]="view" [(viewDate)]="viewDate">
+                          Previous
+                      </div>
+                      <div class="calendarButton calendarTodayButton" mwlCalendarToday [(viewDate)]="viewDate">
+                          Today
+                      </div>
+                      <div class="calendarButton" mwlCalendarNextView [view]="view" [(viewDate)]="viewDate">
+                          Next
+                      </div>
+                  </div>
+              </div>
+           <div [ngSwitch]= "view">
+          <!-- Calendar switch cases: day, week, & month-->
+          <mwl-calendar-month-view  *ngSwitchCase="CalendarView.Month" [viewDate]="viewDate" [events]="events">
+          </mwl-calendar-month-view>
+          <mwl-calendar-week-view  *ngSwitchCase="CalendarView.Week" [viewDate]="viewDate" [events]="events">
+          </mwl-calendar-week-view>
+          <mwl-calendar-day-view *ngSwitchCase="CalendarView.Day" [viewDate]="viewDate" [events]="events">
+          </mwl-calendar-day-view>
+          <!-- Calendar switch cases: day, week, & month-->
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+  </div>

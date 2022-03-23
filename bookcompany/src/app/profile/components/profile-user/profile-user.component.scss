@@ -1,0 +1,344 @@
+
+
+body{
+    margin-top:20px;
+    color: #1a202c;
+    text-align: left;
+    background-color: #e2e8f0;    
+}
+.main-body {
+    padding: 15px;
+}
+.card {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(255, 255, 255, 0.972) !important;
+    background-clip: border-box;
+    border: 0 solid rgba(161, 100, 100, 0.125);
+    border-radius: 9px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+.h-100 {
+    height: 100%!important;
+}
+.shadow-none {
+    box-shadow: none!important;
+}
+
+.usernameText{
+    color: rgb(189, 143, 143) !important;
+    font-weight: 500;
+}
+
+.signOutButton {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: rgba(189, 171, 161, 0.849) !important;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin-bottom:10px;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.signOutButton:hover{
+    border-color: rgb(112, 95, 69);
+    filter: brightness(1.03);
+}
+
+.btn{
+    border-radius: 10px;
+}
+
+
+.formTitle{
+    outline:transparent !important;
+    border: 0;
+    width: 75%
+}
+
+.updateButton{
+    justify-content: center;
+    background-color: #71887f !important;
+    align-items: center;
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  color: white !important;
+  text-transform: capitalize !important;
+}
+
+.updateButton:hover{
+    filter: brightness(1.15);
+    border-color: rgb(13, 95, 13);
+}
+
+.updateButton:active{
+    border-color: rgb(0, 0, 0);
+}
+
+
+
+#link{
+    background-color: rgb(212, 202, 181) !important;
+    height: 30px !important;
+    margin-bottom: 20px;
+}
+
+
+#link>li{
+    color: rgb(75, 75, 75) !important;
+}
+#link>li>a{
+    color: rgb(43, 43, 43) !important;
+    text-decoration: none;
+    padding-left: 10px;
+    
+}
+
+#textArea{
+min-height: 100px !important;
+background-color: #f1eee8;
+}
+#textArea::placeholder{
+    font-size: 1.12rem;
+    }
+
+.iconPost{
+    padding-left: 10px;
+}
+
+.card{
+    background-color: rgb(255, 255, 255) !important; 
+}
+
+.progress-bar{
+    background-color: rgb(84, 99, 109);
+    width: 80%
+}
+
+#userImage {
+    margin-top: 20px;
+}
+
+#pb1{
+    width: 72% !important
+}
+
+#pb2{
+    width: 91% !important
+}
+
+#pb3{
+    width: 88%!important
+}
+
+#progressCard{
+    background-color: rgb(212, 205, 196) !important;
+    border-radius: 5px; 
+}
+
+.progressLinks{
+    color: rgb(121, 104, 58);
+}
+
+.progress {
+    height: 5px
+}
+
+#avatarCard{
+    background-color: rgb(243, 239, 234) !important;
+    background-image: url('https://images.unsplash.com/photo-1511207538754-e8555f2bc187?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Zm9yZXN0JTIwZ3JlZW4lMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    
+}
+
+.logged-in {
+    color: rgb(21, 76, 121);
+    position: absolute;
+    left: 100px;
+    bottom: 8px;
+    border: black;
+    transform: scale(.7);
+  }
+
+  .user-avatar {
+    position: relative;
+    margin-top: -20px !important; 
+  }
+
+  .verifiedLogo{
+    color: rgb(21, 76, 121);
+    border: black;
+    transform: scale(.2);
+    vertical-align:top;
+    line-height:1;
+  }
+.websiteBox{
+    border-radius: 9px; 
+}
+
+#website-text {
+    overflow: hidden;
+}
+
+#divider-spacing {
+    margin-bottom: 2.35rem;
+}
+
+#spacing {
+    margin-bottom: 6px !important
+}
+
+#calendar-header{
+    color: white; font-size: 17px;
+}
+
+#breadcrumb-adjustment {
+    justify-content: center
+}
+
+.panel-footer {
+    background-color:#cac0ac ;
+    border-top: 1px solid #4d708b;
+}
+
+.panel-footer ul li a {
+    color: #7a7a7a;
+}
+
+
+.calendarButton{
+    background-color: rgb(231, 203, 160);
+    color: rgb(102, 102, 102);
+    outline: beige !important;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #201401 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .calendarButton{
+        padding: 2px 3px !important; 
+    }
+}
+
+.calendarTodayButton{
+    background-color: rgb(231, 195, 195); 
+}
+
+
+.calendarButton.active{
+    background-color: rgb(212, 178, 139);
+}
+
+.calendarButton:hover{
+    background-color: rgb(212, 178, 139) !important;
+}
+
+.breadcrumb{
+    background-color: rgb(138, 123, 111) !important;
+    height: 30px !important;
+}
+.postButton{
+    background-color: #e6b58d;
+    border: 1px solid #d49b6b;
+    color: white;
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    height:42.5px;
+    width:100px;
+    overflow: hidden;
+    z-index: 0;
+    font-weight: bold !important;
+}
+
+.postButton:hover{
+    filter: brightness(1.05);
+}
+
+#cityText{
+    font-weight: 400 !important; color: white !important; margin-top: -10px;
+}

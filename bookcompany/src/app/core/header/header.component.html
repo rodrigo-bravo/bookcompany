@@ -1,0 +1,133 @@
+<script src="https://kit.fontawesome.com/c693800225.js" crossorigin="anonymous"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/> 
+
+<header *ngIf= "!isLoggedIn && !isLoading">
+  <div class="header-area" id="mainHeader">
+      <div class="main-header">
+          <div class="header-bottom  header-sticky">
+              <div class="container-fluid">
+                  <div class="d-flex align-items-center justify-content-between flex-wrap position-relative">
+                      <div class="logo">
+                        <a href="index.html" id="mainLogo"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-circle-square" viewBox="0 0 20 20">
+                          <path d="M0 6a6 6 0 1 1 12 0A6 6 0 0 1 0 6z"/>
+                          <path d="M12.93 5h1.57a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1.57a6.953 6.953 0 0 1-1-.22v1.79A1.5 1.5 0 0 0 5.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 4h-1.79c.097.324.17.658.22 1z"/>
+                          </svg><a id="logoTextLeft">Book</a><a id="logoTextRight">Company</a></a>
+                      </div>                             
+                      <div class="main-menu d-none d-lg-block" id="headerBlock">
+                          <nav> 
+                              <ul id="navigation">
+                                <li class="nav-item waves-light">
+                                  <a  class="nav-link waves-light text-light" routerLink="/features" >Features</a>
+                                </li>
+                                <li class="nav-item waves-light">
+                                  <a  class="nav-link waves-light text-light" routerLink="/login">Login</a>
+                                </li>
+                                <li class="nav-item waves-light">
+                                  <a  class="nav-link waves-light text-light" routerLink="/register">Register</a>
+                                </li>
+                                <li class="nav-item waves-light">
+                                  <a  class="nav-link waves-light text-light" routerLink="/contact">Contact</a>
+                                </li>
+                                <li class="nav-item waves-light">
+                                  <a  class="nav-link waves-light text-light" routerLink="/about">About Us</a>
+                                </li>
+                              </ul>
+                          </nav>
+                      </div>
+                      <div class="f-right" id="headerSignin">
+                        <nav class="main-menu" id="loggedInMainMenu"> 
+                          <ul>
+                            <li>
+                              <a id="registerBtn" routerLink="/register">Join Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-app-fill" viewBox="0 0 16 16">
+                                <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h2A1.5 1.5 0 0 1 5 1.5v2A1.5 1.5 0 0 1 3.5 5h-2A1.5 1.5 0 0 1 0 3.5v-2zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                              </svg> </a>
+                              <ul class="submenu">
+                                <li><a routerLink="/register" id="collapseSubMenuText">Register</a></li>
+                                <li><a routerLink="/login" id="collapseSubMenuText">Login</a></li>
+                                <li><a routerLink="/features" id="collapseSubMenuText">Features</a></li>
+                                <li><a routerLink="/about" id="collapseSubMenuText">About Us</a></li>
+                                <li><a routerLink="/contact" id="collapseSubMenuText">Contact Us</a></li>
+                            </ul>
+                            </li>
+                          </ul>
+                      </nav>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                          <a routerLink="/login" class="header-btn">Sign In</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+
+
+<header *ngIf= "isLoggedIn && !isLoading">
+  <div class="header-area" id="mainHeaderLoggedIn">
+    <div class="main-header">
+        <div class="header-bottom  header-sticky">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center justify-content-between flex-wrap position-relative">
+                    <div class="logo">
+                      <a routerLink="/projects" id="mainLogoA"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-circle-square" viewBox="0 0 20 20">
+                        <path d="M0 6a6 6 0 1 1 12 0A6 6 0 0 1 0 6z"/>
+                        <path d="M12.93 5h1.57a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1.57a6.953 6.953 0 0 1-1-.22v1.79A1.5 1.5 0 0 0 5.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 4h-1.79c.097.324.17.658.22 1z"/>
+                        </svg><a id="logoTextLeftA">Book</a><a id="logoTextRightA">Company</a></a>
+                    </div>                             
+                    <div class="main-menu d-none d-lg-block" id="headerBlockA">
+                        <nav> 
+                            <ul id="navigationA">
+                              <li class="nav-item waves-light">
+                                <a  class="nav-link waves-light text-light" routerLink="/projects" >Home</a>
+                              </li>
+                              <li class="nav-item waves-light">
+                                <a  class="nav-link waves-light text-light" routerLink="/gmaps">Locations</a>
+                              </li>
+                              <li class="nav-item waves-light">
+                                <a  class="nav-link waves-light text-light" routerLink="/heremap">Directions</a>
+                              </li>
+                              <li class="nav-item waves-light">
+                                <a  class="nav-link waves-light text-light" routerLink="/book-search">Book Reviews</a>
+                              </li>
+                              <li class="nav-item waves-light">
+                                <a  class="nav-link waves-light text-light" routerLink="/nytimes">Best Sellers</a>
+                              </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="f-right" id="headerSigninA">
+                      <nav class="main-menu" id="loggedInMainMenu"> 
+                        <ul>
+                          <li>
+                            <div class="user-avatar">
+                              <i class="bi bi-three-dots-vertical"></i>
+                              <img class=" headerAvatar rounded-circle avatar-lg" src= "{{ user.photoUrl }}" alt="check" onerror="this.src='https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg'" width="30" height="30">
+                              <span class="logged-in">●</span>
+                            </div>
+                            <ul class="submenu" id="submenuLoggedIn">
+                              <a role="menuitem" class= "px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" id="signedInAs" href="/profile">Signed in as <span class="css-truncate-target" id="signedInAsName">{{ user.displayName }}</span></a><hr>
+                              <li><a routerLink="/projects" id="collapseSubMenuText">Home</a></li>
+                              <li><a routerLink="/gmaps" id="collapseSubMenuText">Locations</a></li>
+                              <li><a routerLink="/heremap" id="collapseSubMenuText">Directions</a></li>
+                              <li><a routerLink="/book-search" id="collapseSubMenuText">Book Reviews</a></li>
+                              <li><a routerLink="/nytimes" id="collapseSubMenuText">Best Sellers</a></li><hr>
+                              <li><a routerLink="/profile" id="collapseSubMenuText">Profile</a></li>
+                              <li><a (click)="onLogout()" id="collapseSubMenuText">Log Out</a></li>
+                          </ul>
+                          </li>
+                        </ul>
+                      </nav>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+ 
+
+</header>

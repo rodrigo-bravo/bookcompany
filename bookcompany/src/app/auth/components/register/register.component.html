@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" /> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+  </head>   
+
+  <body id="backgroundMain">
+      <div class="container">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+          <div data-testid="bookcompany-logo" class="text-center bookcompany-logo mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="black" class="bi bi-circle-square" viewBox="0 0 16 16"><path d="M0 6a6 6 0 1 1 12 0A6 6 0 0 1 0 6z"/><path d="M12.93 5h1.57a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1.57a6.953 6.953 0 0 1-1-.22v1.79A1.5 1.5 0 0 0 5.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 4h-1.79c.097.324.17.658.22 1z"/></svg> 
+              <a id="logoLeft">Book</a><a id="logoRight">Company</a>           
+          </div>
+          <h3 id="topSectionText">Sign up for free to start cataloging.</h3>
+          <div id="headerOrDividerTop"></div>
+          </div>
+          <div class="col-2"></div> 
+      </div>
+      <div class="row" id="rowTry">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <form [formGroup]= "registerForm">
+            <div *ngIf= "error$ | async as error" class="alert alert-danger" role="alert">
+              {{ error }}
+            </div>  
+            <div class="row justify-content-center">
+              <a id="google-button" (click)= "onGoogleLogin('google')"  class="btn bg-white border-0">
+                <img src="//img.icons8.com/color/25/000000/google-logo.png" id="google-logo"/>Sign up with Google
+              </a>    
+              <a id="twitter-button" (click)= "onTwitterLogin('twitter')" class="btn border-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg> Sign up with Twitter
+              </a>
+            </div>
+            <div id="headerOrDivider">
+              <span id="headerOrText">
+                OR 
+              </span>
+            </div>
+            <div class="input-group-icon mt-20">
+              <div class="icon"><i class="bi bi-pen-fill"></i></div>
+              <input id="email" type="text" name="first_name" placeholder="First Name"  class="single-input">
+            </div>
+            <div class="input-group-icon mt-10">
+              <div class="icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+              <input id="email" type="text" name="last_name" placeholder="Username" formControlName="username" class="single-input">
+            </div>
+            <div class="input-group-icon mt-10" id="test123">
+              <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+              <input type="email" id="email" name="email" formControlName="email" placeholder="Email address" class="single-input" required>
+              <div *ngIf= "registerForm.controls.email?.invalid && (registerForm.controls.email?.dirty || registerForm.controls.email?.touched)" id="errorBox">
+                <span *ngIf= "email && email.invalid && (email?.dirty || email?.touched)"> 
+                      <p id="errorText"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg> 
+                      Email Required</p> 
+                </span>   
+              </div>           
+            </div>
+            <div class="input-group-icon mt-10">
+              <div class="icon"><i class="fa fa-lock" aria-hidden="true"></i></div>
+              <input  id="email" type="text" name="password" placeholder="Password" formControlName="password" class="single-input" required>
+              <div *ngIf= "registerForm.controls.password?.invalid && (registerForm.controls.password?.dirty || registerForm.controls.password?.touched)" id="errorBox">
+                <span *ngIf= "password && password?.invalid && password?.errors?.required && (password?.dirty || password?.touched)" id="errorBox" > 
+                          <p id="errorText"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                            </svg> Password Required</p> </span> 
+                <span *ngIf= "password && password?.invalid && password?.errors && password?.dirty">
+                  <p id="errorText"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                    </svg> Password too short</p> 
+                  </span>
+              </div>   
+            </div>
+            <div class="ml-5 mt-1">
+            <p class="Type__TypeElement-goli3j-0 kRNEFg"><span>To learn more about how BookCompany collects your data, please see <a id="privacyLink" href="/us/legal/privacy-policy/" >BookCompany's Privacy Policy</a>.</span></p>
+          </div>
+            <div id="signUpButtonDiv">
+              <div class="aroundbutton">                 
+                    <button [disabled]= "!registerForm.valid" color="primary" block="true" class="my-4 z-depth-0" type="submit" (click)= "onRegister()" type="submit" class="signupbutton btn btn-lg btn-block text-body">
+                      <a class="signuptext" id="signuptext">Sign Up</a> 
+                    </button>              
+              </div>
+            </div>
+            <div id="headerOrDividerBottom"></div>
+          </form>
+        </div>
+      </div>
+        <p class="text-center text-muted mt-4 " id="haveAccountText">Have an account? 
+          <a routerLink="/login" class="fw-bold text-body" id="logInText">
+            Log in
+          </a> 
+        </p>
+      </div>
+  </body>
+</html>
+

@@ -1,0 +1,13 @@
+<article class="leaderboard">
+  <header>
+      <h1 class="leaderboard__title">
+        <span class="leaderboard__title--top">NEW YORK TIMES BESTSELLER</span><span class="leaderboard__title--bottom">HARDCOVER FICTION | Weekly Leaderboard</span></h1>
+  </header>
+  <main class="leaderboard__profiles" *ngFor="let book of booksCall | async">
+      <article class="leaderboard__profile">
+        <img src="{{ book.book_image }}" class="leaderboard__picture" alt="Book Image">
+        <span class="leaderboard__name">{{book.title}} <br> <a>{{ book.author }} </a> </span> 
+        <span class="leaderboard__value"><span>RANK THIS WEEK: </span>{{book.rank}}<br> <span>RANK LAST WEEK: </span>{{book.rank_last_week}} </span>
+      </article>
+  </main>
+</article>

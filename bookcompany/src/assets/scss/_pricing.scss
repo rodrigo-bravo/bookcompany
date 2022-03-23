@@ -1,0 +1,93 @@
+/*-----------Features Menu: Pricing------------------*/
+.pricing-card-area{
+    .single-card{
+        @include transition(.4s);
+        padding: 30px 31px;
+        border: 1px solid #DDE4E8;
+        overflow: hidden !important;
+        position: relative;
+        border-radius: 8px;
+        background: #fff;
+        .card-mid{
+            margin-bottom: 33px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid #DDE4E8;
+            
+            span{
+                display: inline-block;
+                color: $heading-color;
+                margin-bottom: 1px;
+                font-weight: 600;
+            }
+            h4{
+                color: #4294F2;
+                font-size: 24px;
+                font-weight: 700;
+                font-family: $font_2;
+                padding-right: 3px;
+                & > span{
+                    color: #4294F2 !important;
+                    font-size: 16px;
+                    background: none;
+                    padding: 0;
+                }
+            }
+        }
+        .card-bottom{
+            ul{
+                li{
+                    color: #6D6D6D;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                    &:last-child{
+                        margin-bottom: 32px;
+                    }
+                    i{
+                        color: $heading-color;
+                        margin-right: 15px;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .btn_01{
+                border: 1px solid transparent;
+                padding: 13px 76px;
+            }
+        }
+        &:hover{
+            background: #262929;
+            .card-mid{
+                border-bottom: 1px solid rgba(221, 228, 232,.2);
+                span{
+                    color: #fff;
+                }
+            }
+            .card-bottom{
+                ul{
+                    li{
+                        color: #97A7AF;
+                        i{
+                            color: #fff;
+                        }
+                    }
+                }
+                .btn_01{
+                    border: 1px solid #4294F2;
+                    color: #4294F2;
+                    background: none;
+                    
+                }
+            }
+
+        }
+    }
+}
+
+.work-company{
+    .single-logo img {
+        @media #{$lg}{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="s01">
+      <div id="ribbon-container">
+        <a routerLink="/heremap" id="ribbon">Try New Directions</a>
+     </div>
+      <form>
+        <div id="titlesBackground">
+          <fieldset id="title"> 
+            <legend>Discover Landmarks</legend>
+            <p id="subTitle">Search for nearby landmarks associated with your favorite books, movies, songs, etc.</p>
+          </fieldset>
+        </div>
+        <div class="bar">
+          <span id="landmarkBar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </span>
+         <input type="text" id="searchbar" placeholder="Search Here" autocorrect="off" autocapitalize="on" spellcheck="off" type="text" #search>
+           <img class="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice">
+        </div>
+        <div class="buttons" id="btnSearchMain">
+          <button class="button" id="btnSearch" (keydown.enter)= "$event.preventDefault()" onclick= "$event.preventDefault()" type="button"> Search</button>
+          <button class="button" id="btnSearch" routerLink="/heremap"  type="button">Directions</button>
+        </div>
+        <div class="borderMap" id="borderMap">
+          <agm-map [latitude]= "latitude" [longitude]= "longitude" [zoom]= "zoom" >
+            <agm-marker  (mouseOver)= "window.open()" (mouseOut)= "window.close()"  [latitude]= "latitude"  [longitude]= "longitude" [markerDraggable]="true" (dragEnd)= "markerDragEnd($event)" >
+              <agm-info-window #window>
+                <h6> {{address}}</h6>
+              </agm-info-window>
+            </agm-marker>
+          </agm-map>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+

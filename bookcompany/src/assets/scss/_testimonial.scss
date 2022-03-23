@@ -1,0 +1,166 @@
+/*-----------Testimonial: Testimonial in About Us --------------*/
+.h1-testimonial-active{
+    .testimonial-caption{
+        margin-right: 24px;
+        padding-right: 50px;
+        background: #F5F7F9;
+        padding: 50px 14px 31px 43px;
+        border-radius: 5px;
+        border: 2px solid #DDE4E8;
+        .testimonial-top-cap{
+            img{
+                margin-bottom: 35px;
+                width: auto;
+                display: inline-block;
+            }
+            p{
+                color: $heading-color;
+                line-height: 1.5;
+                margin-bottom: 25px;
+                font-size: 20px;
+                font-weight: 400;
+                @media #{$lg}{
+
+                }
+                @media #{$sm}{
+                    margin-bottom: 30px;
+                }
+                @media #{$xs}{
+                    font-size: 15px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .testimonial-founder{
+            .founder-img{
+
+            }
+            .founder-text{
+                margin-left: 20px;
+                text-align: left;
+                span{
+                    color: $heading-color;
+                    font-family: $font_2;
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-align: left;
+                    margin-bottom: 1px;
+                }
+                p{
+                    color:#74706B;
+                    font-weight:500;
+                    line-height:1.5 ;
+                    margin: 0;
+                    font-size: 14px;
+                }
+
+            }
+        }
+        .ratting ul li {
+            display: inline-block;
+            i {
+                color: #316EC2;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.h1-testimonial-active{
+    button{
+        &.slick-arrow {
+            position: absolute;
+            right: -50px;
+            bottom: -88px;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            opacity: 1;
+            visibility: visible;
+            height: 60px;
+            width: 60px;
+            line-height: 60px;
+            cursor: pointer;
+            background: #fff;
+            @media #{$large1}{
+                right: -29px;
+            }
+            @media #{$large2}{
+                right: -29px;
+            }
+            @media #{$lg}{
+                right: 29px;
+            }
+            @media #{$md}{
+                right: -50px;
+                bottom: 0;
+            }
+            @media #{$sm}{
+                line-height: 40px;
+                height: 40px;
+                width: 40px;
+                right:40px;
+            }
+            @media #{$xs}{
+                line-height: 40px;
+                height: 40px;
+                width: 40px;
+                right:40px;
+            }
+            i{
+                font-size: 20px;
+                color: $theme-color;
+            }
+        }
+        &.slick-next {
+            right: -100px;
+            background: $theme-color;
+            @media #{$large1}{
+                right: -80px;
+            }
+            @media #{$large2}{
+                right: -80px;
+            }
+            @media #{$lg}{
+                right: -21px;
+            }
+            i{
+                color: #fff;
+            }
+        }
+    }
+
+    &.dot-style {
+        .slick-dots {
+            position: absolute;
+            right: 0;
+            left: 0;
+            text-align: center;
+            bottom: -68px;
+            li {
+                display: inline-block;
+                margin: 0 8px;  
+            }
+            button {
+                text-indent: -100000px;
+                height: 13px;
+                width: 13px;
+                line-height: 13px;
+                border: 0;
+                padding: 0;
+                cursor: pointer;
+                border-radius: 50%;
+                background:rgba(133, 133, 109,.2);
+            }
+            .slick-active button{
+                background: #85856D;
+                position: relative;
+                @include transition(.4s);
+            }
+        }
+    }
+    
+}
+.slick-initialized .slick-slide {
+    outline: 0;
+}

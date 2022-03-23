@@ -1,0 +1,41 @@
+body {
+    min-height: 100vh;
+}
+
+#aboutHeaderText {
+    font-weight: bold;
+}
+
+#testimonialText {
+    font-size: 10px !important;
+}
+
+#supportColumns {
+   font-size: 16px;
+   text-decoration: underline;
+}
+
+#sectionsText {
+    color: #2d2d2d;
+}
+
+#linkText {
+    color: rgb(145, 98, 70);
+}
+
+#subscribeButton {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: #c97672;
+    padding: 0.9em 0;
+    display: inline-block;
+    border: none;
+    border-radius: 0.5em;
+    width: 100%;
+    margin-bottom: 1.3em;
+}
+
+.searchButton {
+    background-color: rgba(0, 0, 0, 0.705) !important;
+}

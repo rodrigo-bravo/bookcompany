@@ -1,0 +1,470 @@
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+.nav-link.active {
+  background-color: #eee;
+}
+
+.logout-button {
+  display: none;
+}
+
+.avatar-dropdown {
+  display: block;
+}
+
+body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+.menu-wrap a:focus{
+  color:rgb(255, 255, 255);
+  font-weight: 600;
+}
+.menu-wrap a.selected {
+  color: green;
+  font-weight: 600;
+}
+
+#logoTextLeft{
+  font-size: 20px; color: white;
+}
+
+#logoTextRight{
+  font-size: 20px;color: rgb(131, 150, 163)
+}
+
+
+#signedInAs, #dropdowntext{
+  color: rgba(255, 253, 253, 0.8) !important;
+  font-size: 15px;
+  text-decoration: none;
+}
+#signedInAsName{
+  color: rgb(226, 217, 214) !important;
+  font-weight: 800 !important;
+  text-decoration: underline;
+  overflow-wrap: break-word;
+}
+#dropdowndivider{
+  background-color: rgba(255,255,255,0.2);
+}
+
+.navbarLinks{
+  color: rgb(255, 255, 255) !important;
+}
+
+.homeNavbar{
+  background:  	#ceb69d !important;
+  filter: contrast(110%);
+  filter: brightness(90%);
+  height: 8vh;
+  width: 100%;
+}
+
+.maindropdown{
+  background-color: rgba(13,17,23, 0.95) !important;
+  border-radius: 7px;
+}
+
+.usernameHeader{
+  font-weight: 10 !important;
+  color: rgb(207, 212, 207) !important;
+  padding-left: 3.5px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#fulldropdown{
+  border-color: rgba(255,255,255,0.2);
+  width: auto!important;
+}
+
+#dropdowntext:hover{
+  background-color: rgb(127, 127, 155);
+}
+
+#navbarSupportedContent{
+  font-size: 14px;
+}
+
+.search-hover {
+  outline: none;
+  background-size: 2px;
+  background-position: 13px;
+  border-radius: 5px;
+  width: 37.9px;
+  height: 10px;
+  padding: 10px;
+  padding-bottom: 11px;
+  transition: all 0.5s;
+  background-color: transparent;
+  color: white
+}
+
+.search-hover:before{
+  position: absolute;
+  width: 300px; 
+  height: 2px;
+  border-radius: 4px;
+  background-color: rgb(109, 28, 28);
+}
+
+.search-hover:hover {
+  width: 175px;
+  height: 10px;
+  color: rgb(49, 48, 48);
+  background-color: white;
+  font-family: FontAwesome, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal
+}
+
+.search-hover:active {
+  width: 175px;
+  background-color: white;
+  color: rgb(49, 48, 48);
+  font-family: FontAwesome, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal
+}
+.search-hover:focus {
+  width: 175px;
+  background-color: white;
+  color: rgb(49, 48, 48);
+  font-family: FontAwesome, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal
+}
+
+.maindropdown{
+  float: right !important;
+}
+
+#fulldropdown{
+  margin-left:  90%;
+}
+
+.headerAvatar{
+  margin-left: 5px;
+
+}
+
+#dropdownUser{
+  padding-left: 3.5px;
+}
+
+#mainLogo, #mainLogoA{
+  text-decoration: none;
+}
+
+
+
+.dropdown-divider{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.logged-in {
+  color: green;
+  position: absolute;
+  right:-1.5px;
+  bottom: 14px;
+  border: black;
+  transform: scale(1.3);
+  filter: brightness(1.5);
+}
+
+.user-avatar {
+  position: relative;
+  cursor: pointer;
+}
+
+hr{
+  color: white;
+}
+
+.bi{
+  color: white;
+}
+
+#mainHeader{
+  background:rgba(0, 0, 0, 0.933);
+}
+
+#mainHeaderLoggedIn{
+  background-color: #3d2620ce;
+ 
+}
+
+
+#registerBtn{
+  color: white !important;
+  padding-top: 10px;
+  font-size: 13px !important;
+  text-align: center;
+  font-family: 'Gotham', sans-serif;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+#registerBtn:hover{
+  border-radius: 10px;
+  transform: scale(1.01) !important;
+  background-color: rgba(128, 128, 128, 0.082);
+}
+
+
+.header-btn{
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+  font-family: 'Gotham', sans-serif;
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  font-size: 10px;
+  font-weight: 500;
+  overflow: hidden;
+  margin-right: 10px;
+  background-image: linear-gradient(315deg, #47b8d1 0%, #c46df0 74%);
+}
+
+#collapseSubMenuText{
+  text-decoration: none;
+  font-family: 'Gotham', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#submenuLoggedIn{
+  margin-left: -70px !important; 
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 1600px) {
+  #submenuLoggedIn{
+    margin-left: -105px !important; 
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #submenuLoggedIn{
+    margin-left: -120px !important; 
+  }
+}
+
+@media only screen and (max-width: 294px) {
+  #submenuLoggedIn{
+    margin-left: -40px !important; 
+  }
+}
+
+#headerBlock{
+  padding-left: 10% !important; 
+  margin-right: -100px !important;
+}
+
+#headerBlockA{
+  padding-left: 8% !important; 
+}
+
+
+
+@media only screen and (max-width: 991px) {
+  #mainHeader{
+    margin-top: -15px !important;
+    margin-bottom: -17px !important;
+  }
+}
+
+@media only screen and (max-width: 383px) {
+  #mainLogoA{
+    margin-left: -60px !important;
+  }
+}
+
+@media only screen and (max-width: 295px) {
+  #mainLogoA{
+    margin-left: 0px !important;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  #navigation{
+    margin-left: -100px;
+  }
+  #headerBlock{
+    padding-left: 6% !important; 
+  }
+}
+
+#navigationA, #navigation{
+  margin-left: -100px;
+  margin-top: 20px;
+}
+
+#headerSigninA{
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 1650px) {
+#navigationA{
+  margin-left: -150px !important;
+  }
+}
+
+
+@media only screen and (max-width: 370px) {
+  #mainHeader{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    margin-right: -10px !important;
+  }
+}
+
+@media only screen and (max-width: 521px){
+  #mainHeader{
+    padding-top: 25px !important;
+  }
+}
+
+@media only screen and (max-width: 382px) {
+  #mainHeader{
+    margin-left: -70px !important;
+  }
+  .logo{
+    padding-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 316px) {
+  #mainHeader{
+    padding-bottom: 30px !important;
+  }
+  .header-btn{
+    margin-top: 100px !important;
+  }
+  #headerSignIn{
+    float: none !important;
+  }
+  #headerSignInA{
+    float: none !important;
+  }
+  
+}
+
+@media only screen and (max-width: 261px) {
+  #headerSignin{
+    margin-left: -15px !important;
+  }
+  #headerSignInA{
+    margin-left: -15px !important;
+    margin-top: 20px;
+  }
+}
+
+#logoTextLeftA {
+  font-size: 20px; color: white;
+}
+#logoTextRightA {
+  font-size: 20px; color: rgb(190, 159, 130)
+}
+
+#loggedInMainMenu{
+  display: inline-block;
+}
+
+#headerSignin{
+  margin-top: 30px;
+}
+
+.header-btn:hover{
+  background-image: linear-gradient(315deg, #47b8d1 0%, #c46df0 74%);
+  color: #fdfdfd;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+   -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.header-btn:nth-child(1){
+  filter: hue-rotate(270deg);
+}
+.header-btn:nth-child(2){
+  filter: hue-rotate(110deg);
+}
+.header-btn span{
+  position: absolute;
+  display: block;
+}
+.header-btn span:nth-child(1){
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#03e9f4);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+  0%{
+      left: -100%;
+  }
+  50%,100%{
+      left: 100%;
+  }
+}
+.header-btn span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2{
+  0%{
+      top: -100%;
+  }
+  50%,100%{
+      top: 100%;
+  }
+}
+.header-btn span:nth-child(3){
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.50s;
+}
+@keyframes animate3{
+  0%{
+      right: -100%;
+  }
+  50%,100%{
+      right: 100%;
+  }
+}
+
+
+.header-btn span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4{
+  0%{
+      bottom: -100%;
+  }
+  50%,100%{
+      bottom: 100%;
+  }
+}
+

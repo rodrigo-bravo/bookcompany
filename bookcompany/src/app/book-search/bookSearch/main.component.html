@@ -1,0 +1,36 @@
+<div class="section-top-border">
+    <div class="row"> 
+        <div class="col"><h2>New York Times Book Reviews</h2></div>
+        <div class="col-lg-4">
+          <aside class="single_sidebar_widget search_widget mt-15">
+            <form (ngSubmit)="onSearch()">
+            <div class="form-group m-0">
+                <div class="input-group">
+                    <input type="text" class="form-control" [(ngModel)]="firstName" name="firstName" placeholder="Search Author (First and Last Name)">
+                    <div class="input-group-append d-flex">
+                    <button class="searchButton" type="button" (click) = "onSearch()">Search</button>
+                    </div>
+                </div>
+            </div>
+            </form>
+          </aside>
+        </div>
+    </div>
+    <h3></h3>
+    <div class="progress-table-wrap">
+        <div class="progress-table">
+            <div class="table-head">
+                <div class="serial text-white">Results</div>
+                <div class="review-book-title text-white">Book Title</div>
+                <div class="review-book-url text-white" >Review URL</div>
+                <div class="review-book-url text-white">Book Summary</div>
+            </div>
+            <div class="table-row" *ngFor ="let review of reviews | async; let i = index">
+                <div class="serial">{{i+1}}</div>
+                <div class="review-book-title"> <strong>{{review.book_title}}</strong></div>
+                <div class="review-book-url"> <a href="{{review.url}}">{{review.url}}</a></div>
+                <div class="review-book-summary">{{review?.summary == "" ? "None Available" : review.summary}} </div>
+            </div>
+        </div>
+    </div>
+</div>

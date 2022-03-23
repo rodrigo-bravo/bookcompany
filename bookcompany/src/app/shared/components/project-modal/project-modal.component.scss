@@ -1,0 +1,140 @@
+img {
+    width: 82px;
+    margin-bottom: 15px;
+  }
+
+  #titleBox{
+      margin-bottom: 32px;
+  }
+
+#descBox{
+    margin-bottom: 30px;
+}
+
+#titleError{
+  color: rgb(189, 0, 0);
+  font-size: 13.5px;
+}
+
+#modalLabel{
+    font-size: 30px !important;
+    letter-spacing: -1px;
+    margin-left: 15px !important;
+    justify-content: center;
+    color: rgb(136, 89, 62);
+}
+
+#url-box {
+  margin-bottom: 36.5px;
+}
+
+/* (modal close) button author : Cyril Lamotte*/
+@mixin cross($size: 20px, $color: currentColor, $thickness: 1px) {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    position: relative;
+    width: $size;
+    height: $size;
+  
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: ($size - $thickness) / 2;
+      left: 0;
+      right: 0;
+      height: $thickness;
+      background: $color;
+      border-radius: $thickness;
+    }
+  
+    &:before {
+      transform: rotate(45deg);
+    }
+  
+    &:after {
+      transform: rotate(-45deg);
+    }
+  
+    span {
+      display: block;
+    }
+  
+  }
+  
+  .btn-close {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: rgb(138, 99, 55);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 150ms; 
+    .icon-cross {
+      @include cross(20px, #fff, 6px);   
+    } 
+    &:hover,
+    &:focus {
+      transform: rotateZ(90deg);
+      background: rgb(138, 99, 55);
+    }
+  }
+
+.button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #7a6d5d;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #7a6d5d;
+  box-shadow: rgba(0, 0, 0, .5) 0 4px 12px;
+}
+
+
+.button:active {
+  background-color: #7a6d5d;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+#saveBtn {
+  background-color: rgb(100, 138, 64) !important;
+}
+
+label {
+  color: rgb(97, 75, 50);
+  font-weight: 500;
+}

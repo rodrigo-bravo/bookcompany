@@ -1,0 +1,134 @@
+body {
+  background: rgb(154, 172, 202) !important; 
+}
+
+.form-style input {
+  border:0;
+  height:50px;
+  border-radius:0;
+  border-bottom:1px solid rgb(108, 134, 175);	
+}
+
+.form-style input:focus {
+  border-bottom:1px solid #ffffff;	
+  box-shadow:none;
+  outline:0;
+  background-color:rgb(108, 134, 175);	
+}
+.sideline {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:#ccc;
+}
+
+button {
+  height:50px;	
+}
+
+.sideline:before,
+.sideline:after {
+  content: '';
+  border-top: 1px solid #ebebeb;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
+  
+.sideline:after {
+  margin: 0 0 0 20px;
+}
+
+#errorText {
+  color: rgb(221, 146, 146) !important; font-size: 13.2px;
+}
+
+#email:focus, #password:focus {
+  background-color: rgb(108, 134, 175);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#email, #password {
+  border-radius: 10px;
+}
+
+.row {
+  background-color: rgb(108, 134, 175);
+}
+
+#orText {
+  color: white;
+}
+
+.btn {
+  border-radius: 10px !important;
+}
+
+.loginText {
+  font-size: 35px;
+  color: rgb(39, 23, 15) !important; 
+  text-decoration-skip-ink: auto !important;
+  font-family: adobe-clean,Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+}
+
+#logoBox {
+  margin-top: 100px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#mainContainer {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 575px) {
+  #mainContainer {
+    height: 100vh !important;
+    padding-bottom:20vh
+  }
+}
+
+#email:focus::placeholder {
+  color: red !important;
+}
+
+#signinText {
+  color: rgb(247, 247, 247) !important;
+}
+
+#loginWord {
+  padding-top: 10px !important;
+}
+
+#signupText {
+  color: rgb(255, 255, 255) !important; 
+  text-decoration-skip-ink: auto !important;
+}
+
+#forgotpasswordText {
+  color: rgb(236, 227, 221) !important; 
+  text-align: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+#forgot-password-login {
+  justify-content: right;
+}
+
+#cardHeaderText {
+  justify-content: center;
+  color: rgb(46, 43, 43);
+  margin-bottom: 16px;
+}
+
+#email:focus::placeholder, #password:focus::placeholder {
+  color: rgb(7, 5, 5) !important;
+}
+
+#loginImage {
+  object-fit: cover !important; object-position: left !important;
+}
+  

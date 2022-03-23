@@ -1,0 +1,86 @@
+.about-area1{
+    .about-single{
+      @media #{$xs}{
+        margin-bottom: 5px;
+          @include flex-wrap(wrap);
+      } 
+      .icon{
+          img{
+              @media #{$xs}{
+                  margin-bottom: 20px;
+              }
+          }
+      }
+      .pera{  
+          padding-left: 26px;
+          @media #{$xs}{
+              padding-left: 0px;
+              margin-bottom: 10px;
+          }
+          p{
+              color: $body-text-color;
+              font-size: 16px;
+              font-weight: 400;
+              margin: 0;
+          }
+      }
+      &.about-single2{
+        background: #fff;
+        padding: 22px 20px;
+      }
+    }
+    .about-caption{
+        &.about-caption1{
+            @media #{$md}{
+                padding-top: 50px;
+              }
+              @media #{$sm}{
+                padding-top: 50px;
+              }
+              @media #{$xs}{
+                padding-top: 35px;
+              } 
+        }
+        &.about-caption2{
+            @media #{$md}{
+                padding-top: 0px;
+                margin-bottom: 50px;
+              }
+              @media #{$sm}{
+                padding-top: 0px;
+                margin-bottom: 50px;
+              }
+              @media #{$xs}{
+                margin-top: 0px;
+                margin-bottom: 30px;
+              } 
+        }
+        .pera-top {
+            font-size: 16px;
+            font-weight: 500;
+            color: #212025;
+            margin-bottom: 25px;
+        }
+        .pera-bottom {
+            font-size: 16px;
+            color: #212025;
+            font-weight: 300;
+		}
+    }
+    .about-img{
+        &.about-img1{
+            img{
+                border-radius: 0;
+            }
+        }
+        img{
+            width: 100%;
+            border-radius: 4px;
+        }
+    }
+}
+
+
+
+
+  

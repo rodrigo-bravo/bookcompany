@@ -1,0 +1,524 @@
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+
+#topSectionText {
+  margin-top: 10px;
+  font-family: 'Gotham', sans-serif;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  text-overflow: wrap;
+}
+
+.bookcompany-logo {
+  word-break: break-word;
+}
+
+#registerCard {
+  background-color: rgb(236, 236, 236);
+}
+
+#background {
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 100vh;
+}
+
+input {
+  border-radius: 20px;
+}
+
+.container {
+  background-color: rgb(255, 254, 254) !important;
+  border-radius: 30px;
+  padding-top: 45px;
+  padding-bottom: 5px;
+  border: 5px solid rgb(110, 110, 110);
+}
+
+#backgroundMain {
+  padding-top: 4.45vh;
+  background-image: url("/assets/img/register/registerBackground.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding-bottom: 15vh;
+  padding-left: 25vw;
+  padding-right: 25vw;
+  min-height: 90vh;
+}
+
+@media only screen and (max-width: 1405px) {
+  #backgroundMain {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+}
+
+@media only screen and (max-width: 1004px) {
+  #backgroundMain {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
+@media only screen and (max-width: 971px) {
+  #backgroundMain {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+@media only screen and (max-width: 781px) {
+  #backgroundMain {
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+  }
+}
+
+input.ng-invalid.ng-touched {
+  border: 2.99px solid red;
+}
+
+.signin-button {
+  width: 210px;
+  color: black;
+  border: white;
+  height: 40px;
+}
+
+.inner {
+  color: rgb(221, 209, 209);
+}
+
+.footerHead {
+  font-size: 12px;
+  color: rgb(245, 243, 243);
+}
+
+.socialbuttons {
+  padding-bottom: 5px;
+  padding-top: 2.2%;
+}
+
+.forgot1 {
+  text-decoration: underline;
+}
+.forgot1:hover {
+  text-decoration: underline !important;
+  color: rgb(88, 88, 230) !important;
+}
+
+#submit {
+  color: white !important;
+  background-color: rgb(116, 102, 85) !important;
+  border-color: rgb(116, 102, 85) !important;
+}
+
+#submit:hover{
+  border-color: #000000 !important;
+  border-style: double;
+  color: #fff !important;
+}
+
+.links {
+  font-size: 11px;
+}
+
+#privacyLink {
+  color: rgb(16, 16, 53)
+}
+
+#logInText {
+  color: rgb(16, 16, 53) !important; font-size: 14px; text-decoration-skip-ink: auto !important
+}
+
+#haveAccountText {
+  color:rgb(78, 75, 75) !important; font-size: 14px; margin-top: 15px !important;
+}
+
+#textData {
+  font-size:10px; margin-top: -20px; padding-bottom: 20px;
+  color: white;
+}
+
+#dataBox {
+  margin-bottom: -20px !important;
+}
+
+#termsBox {
+  margin-top: -15px;
+  margin-bottom: -.5px !important;
+}
+
+#learnText {
+  font-size:10px; margin-top: -5px; padding-bottom: 10px;
+}
+
+#warningTerms {
+  color: rgb(251,206,181) !important; font-size: 10px;
+}
+
+.warningText {
+  font-size:10px; margin-top: 5px;
+  margin-bottom: 10px;
+  color: white
+}
+
+.signupwords {
+  font-size: 18px;
+  font-family: 'Gotham', sans-serif;
+  font-weight: 500;
+  padding-top: 25px;
+  color: rgb(238, 231, 231);
+  margin-bottom: -5px;
+}
+
+.signupbutton {
+  background-color: rgb(59,71,89);
+  width: 100% !important;
+}
+
+.signupbutton.btn-lg {
+  padding: 10px 50px;
+  border-radius: 6px;
+  width: 100% !important;
+}
+
+.aroundbutton:hover {
+  filter: brightness(1.2);
+  transform: scale(1.05);
+}
+
+.signuptext {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Gotham', sans-serif;
+  color: rgb(255, 255, 255); 
+  text-decoration: none;
+}
+
+.text-info {
+  color: rgb(211, 204, 204) !important; 
+}
+
+.text-info:hover {
+  color:white !important
+}
+
+.form-group {
+  margin-bottom: 0rem;
+}
+
+#email {
+  border: 1px solid rgb(204, 201, 201);
+}
+
+#username, #email, #password {
+  background-color: #ffffff !important;
+  opacity: 1;
+} #username:hover, #email:hover, #password:hover {
+  background-color: #9e9a9a;
+  opacity: .7; 
+  } #username:focus, #email:focus, #password:focus {
+  background-color: #9e9a9a;
+  opacity: .7;}
+
+#email::placeholder{
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.form-control::placeholder {
+  opacity: 1; 
+  color: rgb(255, 249, 249)  !important;
+  font-weight: 200;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-y: hidden;
+}
+
+input.ng-invalid.ng-touched {
+  border: 2.9px solid red;
+}
+
+.logo-Wrapper {
+  height: 45px;
+}
+
+.cardheader-logintext {
+  color: white !important;
+  font-size: 10px;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.signin-button {
+  width: 210px;
+  color: black;
+  border: white;
+  height: 40px;   
+}
+
+.inner {
+  color: rgb(221, 209, 209);
+}
+
+#cardHeaderText {
+  font-size: 12px;
+}
+
+#headerDivider {
+  color: rgb(0, 0, 0); font-weight: bolder; 
+}
+
+.socialbuttons {
+  padding-bottom: 5px;
+  padding-top: 2.2%;
+}
+
+#forgot-password-login {
+  transform: scale(.5) ;
+  padding-right: 10px;
+  color: rgb(244, 253, 255) !important;
+  font-size: 13px !important;
+  text-decoration: underline;
+  color: white;
+}
+
+#errorBox {
+  height:16px !important;
+}
+
+#warningBox {
+  justify-content: center;
+}
+
+#signUpButtonDiv {
+  margin-top:30px;
+  margin-bottom: 5px;
+  margin-left: 15%;
+  margin-right: 15%;
+  width:70%;
+}
+
+#noAccountText {
+  font-weight: bolder; font-size: 13px; color: rgb(231, 223, 223);
+}
+
+#errorText {
+  color: rgb(197, 36, 36) !important; font-size: 12.2px;
+}
+
+#forgot-password-login:hover {
+  text-decoration: underline !important;
+  color: rgb(172, 172, 241) !important;
+}
+
+#submit {
+  color: white !important;
+  background-color: rgb(116, 102, 85) !important;
+  border-color: rgb(116, 102, 85) !important;
+}
+
+#submit:hover {
+  border-color: #000000 !important;
+  color: #fff !important;
+}
+
+.registerbutton {
+  margin-top: 8px !important;
+}
+
+.registerbuttonMain {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 10px !important;
+  font-weight: bold;
+  color: rgb(255, 255, 255) !important;
+  font-family: 'Gotham', sans-serif;
+  background-color: rgba(207, 145, 128, 0.938);
+}
+
+.remembermetext {
+  color: white;
+  font-size: 13px;
+  margin-right: 2px;
+}
+
+.registerbuttonMain:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: transparent;
+  border-color: #000000;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(207, 145, 128, 0.938);
+}
+
+.links {
+  font-size: 11px;
+}
+
+.text-info {
+  color: rgb(211, 204, 204) !important; 
+}
+
+.text-info:hover {
+  color:white !important
+}
+
+.loginbutton {
+  color: rgb(240, 226, 226) !important;
+  margin-bottom: 1rem;
+}
+
+.loginbutton1 {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Gotham', sans-serif;
+  color: rgb(189, 184, 184); 
+  margin-top: 1.5rem;
+}
+
+
+#headerOrDivider {
+  margin-top: 5px;
+  width: 100%; height: 10px; border-bottom: 1px solid black; text-align: center;
+}
+
+#headerOrDividerBottom {
+  margin-top: 5px;
+  width: 70%; height: 10px; border-bottom: 1px solid black; text-align: center;
+  margin-bottom: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#headerOrText {
+  font-size: 10px; font-weight: bolder; background-color: #fffefe; padding: 0 10px;
+}
+
+#headerOrDividerTop {
+  margin-top: 5px;
+  width: 100%; height: 10px; border-bottom: 1px solid black; text-align: center;
+  margin-bottom: 10px;
+}
+
+#google-button {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(100, 97, 97) !important;
+  font-family: 'Gotham', sans-serif;
+  margin-bottom: .5vh;
+  border-radius: 7px;
+  border: 1px solid rgb(225, 225, 225) !important;
+  width: 98%;
+}
+
+#google-button:hover {
+  color: black  !important;
+}
+
+#google-logo {
+  padding-right: 3.5px;
+}
+
+#twitter-button {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(255, 255, 255) !important;
+  font-family: 'Gotham', sans-serif;
+  background-color:  #55ACEE !important;
+  border-radius: 7px;
+  border: 1px solid rgb(204, 201, 201) !important;
+  width: 98%;
+}
+
+.divider {
+  width: 100%;
+  text-align:center;
+}
+
+.divider hr {
+  margin-left:auto;
+  margin-right:auto;
+  width:47%;
+}
+
+.left {
+  position: relative;
+  color: rgb(0, 0, 0);
+}
+
+#emailLabel, #passwordLabel, #usernameLabel{
+  color: white !important;
+  font-size: 12px; 
+  margin-top: 10px;
+}
+
+#fullnameLabel{
+  color: white !important;
+  font-size: 12px; 
+}
+
+
+#dividerText{
+  font-size: 12px !important;
+  font-weight: 600;
+  color: white;
+}
+
+textarea.form-control {
+  height: inherit !important; 
+}
+
+.right {
+  float:right;
+  color: rgb(0, 0, 0);
+}
+
+#email, #password {
+  background-color: #645f5f;
+  opacity: .8;
+}
+
+#email:hover, #password:hover {
+  background-color: #9e9a9a;;
+  opacity: .7;
+}
+
+#email:focus, #password:focus {
+  background-color: #9e9a9a;
+  opacity: .7;
+}
+
+#indentTop {
+  margin-top: -5px;
+}
+
+.alert {
+  font-size: 12px;
+  text-align: center;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+#logoRight {
+  font-size: 22px!important; color: rgb(34, 33, 33) !important;
+}
+
+#logoLeft {
+  padding-left: 3px !important; font-size: 22px !important; color: rgb(34, 33, 33) !important;
+}

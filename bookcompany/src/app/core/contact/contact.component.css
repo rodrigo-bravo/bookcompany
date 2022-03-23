@@ -1,0 +1,178 @@
+#contactLogoBox {
+    border-left: 1px solid rgba(110, 107, 107, 0.155);
+    padding-left: -100px !important;
+}
+
+#contactLogoBox2 {
+    border-right: 1px solid rgba(110, 107, 107, 0.155);
+}
+
+#textInfo {
+    font-size: 19px;
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+}
+
+
+@media only screen and (max-width: 1090px) and (min-width: 803px ) {
+    #yesBtn,#noBtn {
+        border-right: 1px solid rgb(255, 255, 255) !important;
+        border-left: 0px !important;
+    }
+    #noBtn {
+        border-right: 0px solid rgb(255, 255, 255) !important;
+        border-left: 1px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 802px ) {
+    #yesBtn,#noBtn {
+        border-right: 0px solid rgb(255, 255, 255) !important;
+        border-left: 0px !important;
+    }
+    #noBtn {
+        border-right: 0px solid rgb(255, 255, 255) !important;
+        border-left: 0px !important;
+    }
+}
+
+#mainBackground {
+    background-image:url(https://i.ibb.co/YySFGbk/mario-gogh-VBLHICVh-l-I-unsplash-2.jpg); 
+    background-size: cover; 
+    height: 280px; 
+    margin-bottom: 45px;
+}
+
+#iconText {
+    margin-top: 0px;
+}
+
+#bottom {
+    margin-bottom: 100px;
+}
+
+#message {
+    padding-bottom:  100px;
+}
+
+#contact-form {
+    padding-right: 10px;  
+    padding-left: 18px;  
+}
+
+#contactTextHeader {
+    margin-top: 10px !important;
+    margin-bottom: 50px !important;
+}
+
+@media only screen and (max-width: 767px) {
+    #contact-form {
+        padding-right: 70px !important;
+        padding-left: 70px !important;
+        min-width: 400px;
+        margin-bottom:30px
+    }  
+    #textInfo {
+        margin-right: -40px;
+    }  
+}
+
+@media only screen and (max-width: 503px) {
+    #contact-form{
+        padding-right: 40px !important;
+        padding-left: 70px !important;
+        min-width: 100px;
+    }  
+    #textInfo {
+        margin-right: -40px;
+    }
+    #contactLogoBox, #contactLogoBox2, #sendButton {
+        padding-left: 30px !important;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #contact-form {
+        padding-right: 20px !important;
+        padding-left: 40px !important;
+        min-width: 150px;
+    }  
+    #textInfo {
+        margin-right: -35px;
+    }
+}
+
+@media only screen and (max-width: 263px) {
+    #contact-form {
+        padding-right: 10px !important;
+        min-width: 100px;
+    }  
+    #textInfo {
+        margin-right: -30px;
+    }
+}
+
+body {
+    min-height: 100vh;
+}
+
+#yesBtn {
+    background-color: #2f7b85; /* Green */
+    border-right: 3px solid rgb(255, 255, 255);
+    border-left: 22px solid rgb(255, 255, 255);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#noBtn {
+    background-color: #2f7b85; /* Green */
+    border: none;
+    border-left: 3px solid rgb(255, 255, 255);
+    border-right: 22px solid rgb(255, 255, 255);;
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#yesText, #noText {
+    color: white;
+    text-decoration: none;
+}
+
+#chatText {
+    color: #2f2f2f;
+}
+
+#btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 1px !important;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,1.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 0px;   
+}
+
+button:hover {
+    transform: scale(1.01);
+}
+
+#btnText {
+    color: white;
+    margin-top: 10px;
+}
+
+

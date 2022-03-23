@@ -1,0 +1,34 @@
+.great-stuffs{
+    .single-location{
+        h3{
+            a{
+                color: $heading-color;
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 0;
+                padding-top: 20px;
+                display: block;
+                @media #{$lg}{
+                    font-size: 19px;
+                }
+                @media #{$md}{
+                    font-size: 19px;
+                }
+                @media #{$sm}{
+                    font-size: 19px;
+                }
+                @media #{$xs}{
+                    font-size: 19px;
+                }
+            }
+        }
+        p{
+            color: #8F8F8F;
+            font-size: 13px;
+            font-weight: 600;  
+        }
+        .location-img{
+            img{}
+        }
+    }
+}

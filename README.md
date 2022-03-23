@@ -15,8 +15,10 @@ Application features the following Google Maps Platoform's APIs: Directions API,
 ![landmarksMain](https://user-images.githubusercontent.com/89810908/158891867-e514ee07-fd02-4183-b2ea-1b2d84e73f92.PNG)
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/89810908/158899092-e7a3fe32-f36f-42c7-a236-c3d1c112ff98.gif)
 
-Features the following The New York Times API's: Books API and Article Search API.
+Features the following The New York Times API's: Book Best Sellers API and Book Reviews API.
 
+![reviewsMain](https://user-images.githubusercontent.com/89810908/159611574-fc281cb3-9e9e-402f-b7c1-9555c3ddf53c.PNG)
+![bestsellerlistMain](https://user-images.githubusercontent.com/89810908/159611584-457d7796-fb04-466e-b599-e1d510647ef3.PNG)
 
 
 ## Start

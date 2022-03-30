@@ -1,16 +1,22 @@
-# BookLibrary
-Fullstack CRUD App with Authentication, API, Data, Storage, and State Management.
+# BookCompany
+<div align="center">
+  <p><b>Full-Stack CRUD Application With Angular + Authentication + APIs</b></p>
+  
+<img src="https://user-images.githubusercontent.com/89810908/158890254-6ad1f21b-bc46-464d-a344-76fc0700fc05.PNG" width="750" style="border-radius:50%"></img>
 
-![mainHome](https://user-images.githubusercontent.com/89810908/158890254-6ad1f21b-bc46-464d-a344-76fc0700fc05.PNG)
-
-
-#### Features 
-- Angular front-end framework
-- Firebase real-time database
+</div> 
+<div>
+  <p> </p>
+  
+#### **Technologies & Features**
+- Angular **front-end** framework
+- Firebase **back-end** real-time database
 - RESTful APIs: Google Maps & New York Times.
 - NgRx state management
 - Google Registrar
-- AJAX Libraries
+</div> 
+
+
 
 ## Table of Contents
  * [What is BookCompany?](#what-is-bookcompany)
@@ -36,11 +42,13 @@ Fullstack CRUD App with Authentication, API, Data, Storage, and State Management
 
 
 ## What is BookCompany?
-"Simple" fullstack application to store the right book or song for every moment – on your personal collection. 
- 
-This is built with Angular-CLI tool.
+BookCompany is a web application to store the right book, song, or even podcast for every moment on your personal collection.
 
-![mainHome](https://user-images.githubusercontent.com/89810908/158890254-6ad1f21b-bc46-464d-a344-76fc0700fc05.PNG)
+<div align="center">
+ <p><b>Landing Page</b></p>
+  
+<img src="https://user-images.githubusercontent.com/89810908/160753926-b8c8bc23-5ad2-40aa-8f46-01b6b94a7632.PNG" width="750" style="border-radius:50%"></img>
+</div> 
 
 ## Used libraries and RESTful APIs
 "Sfd

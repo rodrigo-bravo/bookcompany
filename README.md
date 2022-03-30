@@ -61,7 +61,7 @@
 
 
 ## What is BookCompany?
-BookCompany is a web application to store the right book, song, or even podcast for every moment on your personal collection.
+BookCompany is a web app to store the right book, song, or even podcast for every moment on your personal collection.
 
 <div align="center">
  <p><b>Landing Page</b></p>
@@ -74,7 +74,7 @@ Application programming interface that allows for interaction with RESTful web s
 
 ### Google Maps Platform
 
-Dynamic, interactive, deeply customized maps, location, and geospatial experiences for the app. services. Click [Google Maps Platform](https://console.cloud.google.com/google/maps-apis/start) to get started with the Google Cloud Console to manage services, credentials, billing, APIs, and SDKs.
+Dynamic, interactive, deeply customized maps, location, and geospatial experiences for the app. Click [Google Maps Platform](https://console.cloud.google.com/google/maps-apis/start) to get started with the Google Cloud Console to manage services, credentials, billing, APIs, and SDKs.
 
 #### Maps JavaScript API and Places API
 

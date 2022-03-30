@@ -29,7 +29,7 @@
 
 ## Table of Contents
  * [What is BookCompany?](#what-is-bookcompany)
- * [Integrated RESTful APIs](#integrated-restful-apis)
+ * [Integrated REST APIs](#integrated-restful-apis)
    * [Google Maps Platform](#google-maps-platform)
       * [Maps JavaScript API & Places API](#maps-javascript-api-and-places-api)
       * [Directions API](#directions-api)
@@ -69,12 +69,12 @@ BookCompany is a web app to store the right book, song, or even podcast for ever
 <img src="https://user-images.githubusercontent.com/89810908/160753926-b8c8bc23-5ad2-40aa-8f46-01b6b94a7632.PNG" width="750" style="border-radius:50%"></img>
 </div> 
 
-## Integrated RESTful APIs
-Application programming interface that allows for interaction with RESTful web services
+## Integrated REST APIs
+Architectural style for an application program interface (API) that uses HTTP requests to access and use data. 
 
 ### Google Maps Platform
 
-Dynamic, interactive, deeply customized maps, location, and geospatial experiences for the app. Click [Google Maps Platform](https://console.cloud.google.com/google/maps-apis/start) to get started with the Google Cloud Console to manage services, credentials, billing, APIs, and SDKs.
+Dynamic and interactive maps, location, and geospatial experiences for the app. Click [Google Maps Platform](https://console.cloud.google.com/google/maps-apis/start) to get started with the Google Cloud Console to manage services, credentials, billing, APIs, and SDKs.
 
 #### Maps JavaScript API and Places API
 
@@ -96,10 +96,10 @@ The Directions API is a web service that uses an HTTP request to return JSON or 
 </div> 
 
 ### New York Times Books API
-The Books API provides information about book reviews and The New York Times Best Sellers lists.
+The Books API provides information about book reviews and the New York Times Best Sellers lists.
 
 #### Book Reviews
-The book reviews service lets you get NYT book review by author.
+The book reviews service lets users search NYT book reviews by author.
 
 <div align="center">  
    <p><b>Book Reviews Page</b></p>

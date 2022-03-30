@@ -257,6 +257,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Author
 
 Rodrigo E. Bravo
+
 rodrigoebravo@outlook.com
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

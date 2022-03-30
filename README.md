@@ -1,12 +1,21 @@
 # BookCompany
-<div align="center">
-  <p><b>Full-Stack CRUD Application With Angular + Authentication + APIs</b></p>
+
+<br>
+<div align="center">  
+   <p><b>Full-Stack CRUD Application With Angular + Firebase Database + Authentication + APIs</b></p>
   
+  <img src="https://brandslogos.com/wp-content/uploads/images/large/angular-icon-logo.png" width="35"></img> 
+  <img src="https://user-images.githubusercontent.com/89810908/160763806-50c19cfc-98ab-4095-bf1d-30fabc2dbc8b.png" width="38"></img>
+  <img src="https://user-images.githubusercontent.com/89810908/160764123-df74b910-317e-4b11-a670-6a6bd582e685.svg" width="35"></img>
+  <img src="https://user-images.githubusercontent.com/89810908/160764862-abab2359-43b5-47ae-a105-556b7322c774.png" width="60"></img>
+
+
+  <p></p>
 <img src="https://user-images.githubusercontent.com/89810908/158890254-6ad1f21b-bc46-464d-a344-76fc0700fc05.PNG" width="750" style="border-radius:50%"></img>
 
 </div> 
 <div>
-  <p> </p>
+<br>
   
 #### **Technologies & Features**
 - Angular **front-end** framework
@@ -15,14 +24,14 @@
 - NgRx state management
 - Google Registrar
 </div> 
-
+<br>
 
 
 ## Table of Contents
  * [What is BookCompany?](#what-is-bookcompany)
- * [Used libraries and RESTful APIs](#used-libraries-and-restful-apis)
-   * [Libraries](#libraries)
-   * [RESTful APIs](#restful-apis)
+ * [Integrated RESTful APIs](#integrated-restful-apis)
+   * [Google Maps](#google-maps)
+   * [New York Times](#new-york-times)
  * [Installation, configure and usage](#installation-configure-and-usage)
    * [Preconditions](#preconditions)
    * [Installation](#installation)
@@ -50,17 +59,10 @@ BookCompany is a web application to store the right book, song, or even podcast 
 <img src="https://user-images.githubusercontent.com/89810908/160753926-b8c8bc23-5ad2-40aa-8f46-01b6b94a7632.PNG" width="750" style="border-radius:50%"></img>
 </div> 
 
-## Used libraries and RESTful APIs
-"Sfd
+## Integrated RESTful APIs
+Application programming interface that allows for interaction with RESTful web services
 
-### Libraries
-f
-
-
-### RESTful APIs
-f
-
-
+### fd
 
 App features user login and register, and user profile. Images ordered respectively:
 

@@ -32,6 +32,9 @@
  * [Integrated RESTful APIs](#integrated-restful-apis)
    * [Google Maps](#google-maps)
    * [New York Times](#new-york-times)
+ * [Authentication](#authentication)
+   * [Login](#login)
+   * [Register](#register)
  * [Installation, configure and usage](#installation-configure-and-usage)
    * [Preconditions](#preconditions)
    * [Installation](#installation)
@@ -63,6 +66,11 @@ BookCompany is a web application to store the right book, song, or even podcast 
 Application programming interface that allows for interaction with RESTful web services
 
 ### fd
+
+### fd
+
+## Authentication
+Handled by firebase
 
 App features user login and register, and user profile. Images ordered respectively:
 

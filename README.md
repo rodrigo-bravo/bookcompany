@@ -2,7 +2,7 @@
 
 <br>
 <div align="center">  
-   <p><b>Full-Stack CRUD Application With Angular + Firebase Database + Authentication + APIs</b></p>
+   <p><b>Full-Stack CRUD Application With Angular + Firebase Database + Authentication + REST APIs</b></p>
   
   <img src="https://brandslogos.com/wp-content/uploads/images/large/angular-icon-logo.png" width="35"></img> 
   <img src="https://user-images.githubusercontent.com/89810908/160763806-50c19cfc-98ab-4095-bf1d-30fabc2dbc8b.png" width="38"></img>

@@ -18,11 +18,11 @@
 <br>
   
 #### **Technologies & Features**
-- Angular **front-end** framework
-- Firebase **back-end** real-time database
-- RESTful APIs: Google Maps & New York Times.
-- NgRx state management
-- Google Registrar
+-  **Angular front-end** framework
+-  **Firebase back-end** real-time NoSQL cloud database
+-  **RESTful APIs**: Google Maps & New York Times.
+-  NgRx state management
+-  Google Registrar
 </div> 
 <br>
 
@@ -30,27 +30,34 @@
 ## Table of Contents
  * [What is BookCompany?](#what-is-bookcompany)
  * [Integrated RESTful APIs](#integrated-restful-apis)
-   * [Google Maps](#google-maps)
-   * [New York Times](#new-york-times)
+   * [Google Maps Platform](#google-maps-platform)
+      * [Maps JavaScript API & Places API](#maps-javascript-api-and-places-api)
+      * [Directions API](#directions-api)
+   * [New York Times Books API](#new-york-times-books-api)
+      * [Book Reviews](#book-reviews)
+      * [Best Sellers List](#best-sellers-list)
  * [Authentication](#authentication)
    * [Login](#login)
+     * [Token-Based Authentication](#token-based-authentication)
+     * [Firebase Authentication](#firebase-authentication)
    * [Register](#register)
- * [Installation, configure and usage](#installation-configure-and-usage)
+     * [Token-Based](#token-based)
+     * [User Registration with Angular Firebase](#user-registration-with-angular-firebase)
+ * [User Profile](#user-profile)
+ * [Personal Collection](#personal-collection)
+   * [Projects](#projects)
+     * [Create](#create)
+     * [Update](#update)
+     * [Delete](#delete)
+ * [Getting Started](#getting-started)
    * [Preconditions](#preconditions)
    * [Installation](#installation)
-   * [Configuration](#configuration)
- * [Backend for this application](#backend-for-this-application)
-   * [Endpoints / actions:](#endpoints--actions)
-   * [JWT handling](#jwt-handling)
-   * [CORS support](#cors-support)
-   * [Example backend](#example-backend)
- * [Development](#development)
+ * [Development Server](#development-server)
  * [Tests](#tests)
    * [Unit tests](#unit-tests)
-   * [e2e tests](#e2e-tests)
+   * [e2e tests](#end-to-end-tests)
  * [Build](#build)
  * [Author](#author)
- * [License](#license)
 
 
 ## What is BookCompany?
@@ -65,53 +72,191 @@ BookCompany is a web application to store the right book, song, or even podcast 
 ## Integrated RESTful APIs
 Application programming interface that allows for interaction with RESTful web services
 
-### fd
+### Google Maps Platform
 
-### fd
+Dynamic, interactive, deeply customized maps, location, and geospatial experiences for the app. services. Click [Google Maps Platform](https://console.cloud.google.com/google/maps-apis/start) to get started with the Google Cloud Console to manage services, credentials, billing, APIs, and SDKs.
+
+#### Maps JavaScript API and Places API
+
+Users can search for landmarks associated with their favorite books or songs without having to leave the app. The Places API contains location data for over 200 million places and autocomplete. With the Maps JavaScript API, the autocomplete mechanism is integrated with the map.
+<div align="center">  
+   <p><b>Landmarks Search Page</b></p>
+
+  <p></p>
+<img src="https://user-images.githubusercontent.com/89810908/158891867-e514ee07-fd02-4183-b2ea-1b2d84e73f92.PNG" width="750" style="border-radius:50%"></img>
+</div> 
+
+#### Directions API
+The Directions API is a web service that uses an HTTP request to return JSON or XML-formatted directions between landmarks and important locations for driving, cycling, transit, and walking.
+<div align="center">  
+   <p><b>Landmarks Directions Page</b></p>
+
+  <p></p>
+<img src="https://user-images.githubusercontent.com/89810908/158899092-e7a3fe32-f36f-42c7-a236-c3d1c112ff98.gif" width="750" style="border-radius:50%"></img>
+</div> 
+
+### New York Times Books API
+The Books API provides information about book reviews and The New York Times Best Sellers lists.
+
+#### Book Reviews
+The book reviews service lets you get NYT book review by author.
+
+<div align="center">  
+   <p><b>Book Reviews Page</b></p>
+
+  <p></p>
+<img src="https://user-images.githubusercontent.com/89810908/159611574-fc281cb3-9e9e-402f-b7c1-9555c3ddf53c.PNG" width="750" style="border-radius:50%"></img>
+</div> 
+
+#### Best Sellers List
+The best sellers service returns a list of Times best sellers list (for hardcover-fiction) updated weekly.
+
+<div align="center">  
+   <p><b>Best Sellers Page</b></p>
+
+  <p></p>
+<img src="https://user-images.githubusercontent.com/89810908/159611584-457d7796-fb04-466e-b599-e1d510647ef3.PNG" width="750" style="border-radius:50%"></img>
+</div> 
+
+
 
 ## Authentication
-Handled by firebase
+Token-based authentication and Firebase Authentication SDK are integrated into this app to provide methods to create and manage users.
 
-App features user login and register, and user profile. Images ordered respectively:
+### Login
 
-![image](https://user-images.githubusercontent.com/89810908/158891203-a0a8d0e9-4f90-401a-a938-41a41a1263ad.png)
-![registerMain](https://user-images.githubusercontent.com/89810908/158891534-cbf296e3-cd2c-4bb5-8161-e0cbb5942972.PNG)
-![mainProfile](https://user-images.githubusercontent.com/89810908/158890981-006bb162-5133-4fda-8ca0-1a3a6af52f31.PNG)
+#### **Token-based Authentication**
+
+- Login Requested
+   - Dispatch `LOGIN Requested` action
+   - Add action
+   - Add effect (to dispatch either `LOGIN Success` or `AuthError`)
+- Login Success
+   - Dispatch `LOGIN Success` action
+   - Add reducer (to create new state)
+     - Authentication state `isLoggedIn` is set to true and token and email added to the user object during successful log-ins.
+     - Authentication state `isLoading` is set to false.
+   - Add effect (to add token to localStorage and redirect user)
+     - Returns an observable identical to the source. 
+     - Updates online status to true. 
+- Login Failed
+   - Dispatch `AuthError` action
+   - Add reducer (to create new state)
+
+#### **Firebase Authentication**
+- Generate auth service and user interface files to create a Firebase authentication system with Angular.
+- Use auth service to create login authentication with Angular and Firebase.
+- Social logins using Firebase’s Google and Twitter auth provider.
+
+<div align="center">  
+   <p><b>Login Page</b></p>
+
+  <p></p>
+<img src="https://user-images.githubusercontent.com/89810908/158891203-a0a8d0e9-4f90-401a-a938-41a41a1263ad.png" width="750" style="border-radius:50%"></img>
+</div> 
+
+### Register
+
+#### **Token-based**
+
+- Register Requested
+   - Dispatch `REGISTER Requested` action
+   - Add action
+   - Add effect (to dispatch either `REGISTER Completed` or `AuthError`)
+- Register Completed
+   - Add action
+   - switchMap to `LOGIN Success` and `Update Profile`
+- Register Failed
+   - Dispatch `AuthError` action
+
+#### **User Registration with Angular Firebase**
+- Use auth service for user registration with Angular and Firebase.
+- Sign up using Firebase’s Google and Twitter auth provider.
+<div align="center">  
+   <p><b>Register Page</b></p>
+
+  <p></p>
+<img src="https://user-images.githubusercontent.com/89810908/158891534-cbf296e3-cd2c-4bb5-8161-e0cbb5942972.PNG" width="750" style="border-radius:50%"></img>
+</div>
 
 
-Application features the following Google Maps Platoform's APIs: Directions API, Geolocation API, Maps JavaScript API, and Places API.
+## User Profile
+Profile section to change username and profile picture, look up calendar events, or simply update profile status.
+<div align="center">  
+   <p><b>Profile Page</b></p>
 
-![landmarksMain](https://user-images.githubusercontent.com/89810908/158891867-e514ee07-fd02-4183-b2ea-1b2d84e73f92.PNG)
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/89810908/158899092-e7a3fe32-f36f-42c7-a236-c3d1c112ff98.gif)
+  <p></p>
+<img src="https://user-images.githubusercontent.com/89810908/158890981-006bb162-5133-4fda-8ca0-1a3a6af52f31.PNG" width="750" style="border-radius:50%"></img>
+</div>
 
-Features the following The New York Times API's: Book Best Sellers API and Book Reviews API.
+## Personal Collection
+Main section to allow users to store their projects in their own collection.
 
-![reviewsMain](https://user-images.githubusercontent.com/89810908/159611574-fc281cb3-9e9e-402f-b7c1-9555c3ddf53c.PNG)
-![bestsellerlistMain](https://user-images.githubusercontent.com/89810908/159611584-457d7796-fb04-466e-b599-e1d510647ef3.PNG)
+### Projects
 
 
-## Start
+#### **Create**
+<div align="center">  
+   <p><b>Home Page (Upload Modal)</b></p>
+
+  <p></p>
+<img src="https://user-images.githubusercontent.com/89810908/160908939-33dbb4b3-724f-4e10-937b-32808c7ba63b.PNG" width="750" style="border-radius:50%"></img>
+</div>
+
+#### **Update**
+<div align="center">  
+   <p><b>Home Page (Edit Modal)</b></p>
+
+  <p></p>
+<img src="https://user-images.githubusercontent.com/89810908/160909122-26e41d4a-da1c-47ea-adea-d77117436dac.PNG" width="750" style="border-radius:50%"></img>
+</div>
+
+
+#### **Delete**
+<div align="center">  
+   <p><b>Home Page (Delete Modal)</b></p>
+
+  <p></p>
+<img src="https://user-images.githubusercontent.com/89810908/160909071-86609fa4-74db-4cd3-a246-225fe95a9f21.PNG" width="750" style="border-radius:50%"></img>
+</div>
+
+
+
+
+## Getting Started
+### Preconditions
+- Google Maps API Key
+- New York Times API Key Auth
+- Firebase Cloud Console Account
+- Node and npm
+
+### Installation
 ```
 cd bookcompany
 npm install
 ```
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Tests
+
+### Unit tests
+
+- Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+### End-to-end tests
+
+- Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Author
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Contact Info
+Rodrigo E. Bravo
 rodrigoebravo@outlook.com
 
 

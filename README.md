@@ -262,6 +262,6 @@ rodrigoebravo@outlook.com
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url = https://github.com/rodrigo-bravo/bookcompany/)
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https://github.com/rodrigo-bravo/bookcompany/)
 
 

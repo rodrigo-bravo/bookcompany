@@ -242,11 +242,11 @@ Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app 
 
 ## Tests
 
-### Unit tests
+### Unit tests 
 
 - Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-### End-to-end tests
+### End-to-end (E2E) tests
 
 - Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
